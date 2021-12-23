@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="/css/style.css">
   
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -12,7 +14,51 @@
   
 </head>
 <body>
+<div class="container wrapper">
 
+  <div class="header">
+    <h2>SPLI</h2>
+    <h2>TTER</h2>
+  </div>
+
+  <div class="container-white">
+    <form action="">
+      <label for="bill">Bill</label><br>
+      <input type="text" name="bill" id="bill" placeholder="$">
+    
+  
+    <div class="input">
+        <label for="">Select Tip %</label>
+
+        <div class="btns1">
+          <button id="btn1">5%</button>
+          <button id="btn2">10%</button>
+          <button id="btn3">15%</button>
+          <button id="btn4">25%</button>
+          <button id="btn5">50%</button>
+          <button id="btn6">Custom</button>
+        </div>
+
+        <label for="no"> Number of People</label><br>
+        <input type="text" name="no" id="no">
+    </div>
+
+    <div class="output">
+      <div class="tip-amnt">
+        <h3>Tip Amount</h3>
+        <p>/ person</p>
+      </div>  
+      <div class="tot-prsn">
+        <h3>Total</h3>
+        <p>/ person</p>
+      </div>  
+
+      <button type="reset">RESET</button>
+    </div>
+  </form>
+  </div>
+
+</div>
  
   
 
