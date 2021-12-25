@@ -67,22 +67,36 @@ body {
                    display: flex;
                    justify-content: space-between;
                    padding: .5em 0;
-                   button {
-                    cursor: pointer;
+
+                   input::placeholder {
+                    color: $White ;
+                }
+
+                   input {
+                      cursor: pointer;
                       font-size: 24px;
                       width: 48%;
                       padding: .3em;
                       background-color: $very-dark-cyan;
-                      color: $White;
                       border: none;
+                      color: $White;
                       border-radius: 5px;
                       font-family: 'Space Mono', monospace;
+
                    }
-                   button:hover {
+                  input:hover {
                     background-color: $Light-grayish-cyan1;
                     color: $very-dark-cyan;
                     font-weight: bold;
                 }
+
+                #btn6 {
+                    background-color: $Light-grayish-cyan2 ;
+                    color: $very-dark-cyan;
+                    font-weight: bold;
+                    width: 48%;
+                }
+               
                }
             }
         }
