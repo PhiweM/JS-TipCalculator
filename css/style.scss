@@ -31,6 +31,7 @@ body {
     background-color: $White;
     border-radius: 20px;
     padding: 1.5em;
+  
     form {
         label {
             font-weight: bold;
@@ -42,25 +43,55 @@ body {
         }
     
         input {
+            cursor: pointer;
             background-color: $Light-grayish-cyan2;
             padding: 1em;
-            border: none;
+            border: hidden;
             border-radius: 5px;
             width: 100%;
             font-size: 24px;
             margin-top: 10px;
         }
 
-        .total-cost {
-            padding: 1.5em 0;
+         input:focus {
+            outline-color: $primary-color;
+        }
 
-            .btns1 {
+        .total-cost {
+            padding: 1.7em 0;
+
+            .btns {
                
+                margin-top: 10px;
+               .row {
+                   display: flex;
+                   justify-content: space-between;
+                   padding: .5em 0;
+                   button {
+                    cursor: pointer;
+                      font-size: 24px;
+                      width: 48%;
+                      padding: .3em;
+                      background-color: $very-dark-cyan;
+                      color: $White;
+                      border: none;
+                      border-radius: 5px;
+                      font-family: 'Space Mono', monospace;
+                   }
+                   button:hover {
+                    background-color: $Light-grayish-cyan1;
+                    color: $very-dark-cyan;
+                    font-weight: bold;
+                }
+               }
             }
         }
+         
     }
    
 }
+
+
 
 
 
