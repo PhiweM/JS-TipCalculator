@@ -45,7 +45,7 @@ body {
         input {
             cursor: pointer;
             background-color: $Light-grayish-cyan2;
-            padding: 1em;
+            padding: .5em;
             border: hidden;
             border-radius: 5px;
             width: 100%;
@@ -62,7 +62,7 @@ body {
 
             .btns {
                
-                margin-top: 10px;
+                margin-bottom: 25px;
                .row {
                    display: flex;
                    justify-content: space-between;
@@ -94,7 +94,7 @@ body {
                     background-color: $Light-grayish-cyan2 ;
                     color: $very-dark-cyan;
                     font-weight: bold;
-                    width: 48%;
+                   text-align: center;
                 }
                
                }
@@ -102,6 +102,10 @@ body {
         }
          
     }
+
+    .result {
+        background-color: $very-dark-cyan;
+        border-radius: 5px;
    
 }
 
@@ -134,4 +138,4 @@ body {
 
 
 .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(228, 45%, 44%); }}
