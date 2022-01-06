@@ -9,6 +9,7 @@
   <!-- Custom stylesheet -->
   <link rel="stylesheet" href="/css/style.css">
   <!-- Font awesome icons -->
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
   
   
   <title>Frontend Mentor | Tip calculator app</title>
@@ -49,23 +50,25 @@
         </div>
 
         <label for="no"> Number of People</label><br>
-        <input type="text" name="no" id="no"><i></i>
+        <i class="fa fa-user"></i>
+        <input type="text" name="no" id="no">
     </div>
+    <!-- End of total-cost -->
 
     <div class="result">
       <div class="tip-amnt">
-        <div>
+        <div class="left-titles">
           <h3>Tip Amount</h3>
           <p>/ person</p>
         </div>
-        <div class="total-amount"><h2>$4.27</h2></div>
+        <div class="total-amount right-cost"><h2>$4.27</h2></div>
       </div>  
       <div class="tot-prsn">
-        <div>
+        <div  class="left-titles">
           <h3>Total</h3>
           <p>/ person</p>
         </div>
-        <div class="total-per-peson"><h2>$32.79</h2></div>
+        <div class="total-per-peson right-cost"><h2>$32.79</h2></div>
       </div>  
 
       <button type="reset">RESET</button>

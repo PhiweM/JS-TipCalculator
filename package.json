@@ -20,5 +20,8 @@
   "homepage": "https://github.com/PhiweM/JS-TipCalculator#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
   }
 }
