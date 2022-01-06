@@ -31,6 +31,14 @@ body {
     background-color: $White;
     border-radius: 20px;
     padding: 1.5em;
+
+     // Text input styles
+    input[type=text] {
+        font-weight: bold;
+        text-align: right;
+        background-color: $Light-grayish-cyan2;
+        color: $very-dark-cyan;
+    }
   
     form {
         label {
@@ -40,6 +48,7 @@ body {
     
         input::placeholder {
             color: $Dark-grayish-cyan1;
+            text-align: left;
         }
     
         input {
@@ -51,6 +60,7 @@ body {
             width: 100%;
             font-size: 24px;
             margin-top: 10px;
+           
         }
 
          input:focus {
@@ -110,6 +120,7 @@ body {
          
     }
 
+   
 
     .result {
         background-color: $very-dark-cyan;
@@ -183,4 +194,9 @@ body {
 
 
 .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }}}
+    .attribution a { color: hsl(228, 45%, 44%); }}
+
+}
+// **********
+// End of Container White
+// **********
