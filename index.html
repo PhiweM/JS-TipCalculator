@@ -27,33 +27,51 @@
 
   <div class="container-white">
     <form action="">
-      <label for="bill">Bill</label><br>
-      <input type="text" name="bill" id="bill" placeholder="$">
+      <div class="left-align">
+        <label for="bill">Bill</label><br>
+        <input type="text" name="bill" id="bill" placeholder="$">
+      
     
+      <div class="total-cost">
+          <label for="">Select Tip %</label>
   
-    <div class="total-cost">
-        <label for="">Select Tip %</label>
+          <div class="btns buttons">
+            <div class="row">
+              <input id="btn1" type="button" value="5%" name="5%">
+              <input id="btn2" type="button" value="10%" >
+            </div>
+            <div class="row">
+              <input id="btn3" type="button" value="15%">
+              <input id="btn4" type="button" value="25%">
+            </div>
+            <div class="row">
+              <input id="btn5" type="button" value="50%">
+              <input id="btn6" type="text" value="Custom" >
+            </div>
+          </div>
 
-        <div class="btns">
-          <div class="row">
-            <input id="btn1" type="button" value="5%" name="5%">
-            <input id="btn2" type="button" value="10%" >
+          <div class="btns2 buttons">
+            <div class="row">
+              <input id="btn1" type="button" value="5%" name="5%">
+              <input id="btn2" type="button" value="10%" >
+              <input id="btn3" type="button" value="15%">
+            </div>
+            
+            <div class="row">
+              <input id="btn4" type="button" value="25%">
+              <input id="btn5" type="button" value="50%">
+              <input id="btn6" type="text" value="Custom" >
+            </div>
           </div>
-          <div class="row">
-            <input id="btn3" type="button" value="15%">
-            <input id="btn4" type="button" value="25%">
-          </div>
-          <div class="row">
-            <input id="btn5" type="button" value="50%">
-            <input id="btn6" type="text" value="Custom" >
-          </div>
-        </div>
-
-        <label for="no"> Number of People</label><br>
-        <i class="fa fa-user"></i>
-        <input type="text" name="no" id="no" >
-    </div>
-    <!-- End of total-cost -->
+  
+          <label for="no"> Number of People</label><br>
+          <i class="fa fa-user"></i>
+          <input type="text" name="no" id="no" >
+      </div>
+      <!-- End of total-cost -->
+      </div>
+      <!-- End of left align div for larger screens -->
+     
 
     <div class="result">
       <div class="tip-amnt">
@@ -78,7 +96,7 @@
   <!-- End Container-white -->
 
 
-</div>
+
  
   
 
@@ -90,5 +108,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Phiwe Mhlope</a>.
   </div> 
+</div>
+<!-- End wrapper container -->
 </body>
 </html>

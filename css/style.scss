@@ -70,7 +70,11 @@ body {
         .total-cost {
             padding: 1.7em 0;
 
-            .btns {
+            .btns2 {
+                display: none;
+            }
+
+            .buttons {
                
                 margin-bottom: 25px;
                .row {
@@ -159,39 +163,18 @@ body {
             padding: .8em;
             border-radius: 5px;
             border: 2px solid $very-dark-cyan;
-            font-weight: bold;
+            font-weight: bolder;
+            font-size: 1rem;
             color: $very-dark-cyan;
             background-color: $primary-color;
         }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.result-reset{
+    button {
+        opacity: .1;
+    }
+}
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }}
@@ -200,3 +183,37 @@ body {
 // **********
 // End of Container White
 // **********
+
+
+
+
+
+// **********
+//  Medium devices (tablets, 768px and up)
+// **********
+
+@media (min-width: 768px) {
+    .container-white {
+        // width: 70%;
+        // height: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+        form {
+            display: flex;
+        }
+
+        .total-cost {
+            .btns {
+                display: none;
+            }
+            .btns2 {
+                display: unset !important;
+            }
+        }
+    }
+ }
+
