@@ -108,9 +108,13 @@ body {
                     background-color: $Light-grayish-cyan2 ;
                     color: $very-dark-cyan;
                     font-weight: bold;
-                   text-align: center;
+                   text-align: right;
                 }
                
+                #btn6::placeholder {
+                    opacity: 1;
+                    color: $very-dark-cyan !important;
+                }
                }
             }
 
@@ -158,6 +162,7 @@ body {
         }
 
         button {
+            cursor: pointer;
             width: 100%;
             text-align: center;
             padding: .8em;
@@ -167,6 +172,10 @@ body {
             font-size: 1rem;
             color: $very-dark-cyan;
             background-color: $primary-color;
+        }
+
+        button:hover {
+            background-color: $Light-grayish-cyan1;
         }
 }
 
@@ -193,9 +202,17 @@ body {
 // **********
 
 @media (min-width: 768px) {
+
+    .header {
+        letter-spacing: .5em;
+        line-height: 1.8em;
+        padding: 2.5em;
+        margin-top: 5%;
+    }
+
     .container-white {
-        // width: 70%;
-        // height: 50%;
+        width: 75%;
+        max-height: 50%;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -204,14 +221,66 @@ body {
 
         form {
             display: flex;
+            justify-content: space-between;
+
+            input {
+                padding: .3em;
+                width: 100%;
+                font-size: 22px;
+                margin-top: 5px; 
+            }
+
+            .left-align {
+              width: 50%;
+               margin-right: .5em;
+            }
+            .result {
+                width: 50%;
+                height: 100%;
+                margin-left: 1em;
+
+                button {
+                    margin-top: 4.5rem;
+                }
+            }
         }
 
         .total-cost {
+            padding: 1.7em 0;
+
             .btns {
                 display: none;
             }
             .btns2 {
                 display: unset !important;
+                // margin-bottom: 20px;
+                .row {
+                    display: flex;
+                    justify-content: space-around;
+                    padding: .5em 0;
+ 
+                    input {
+                       font-size: 19px !important;
+                       width: 30% !important;
+                       padding: .3em !important;
+                       margin-top: 2px;
+                    }
+                }
+            }
+
+            i {
+                position: absolute;
+                padding: 15px !important;
+                padding-left: 10px;
+                min-width: 40px;
+                color: $Dark-grayish-cyan1;
+            }
+        }
+
+        .result {
+            .left-titles {
+                line-height: 1rem;
+                margin-top: .7rem;
             }
         }
     }
