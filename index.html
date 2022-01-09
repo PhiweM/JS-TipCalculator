@@ -68,6 +68,7 @@
           <br>
           <i class="fa fa-user"></i>
           <input type="text" name="no" id="no" >
+          <div id="feedback"></div>
       </div>
       <!-- End of total-cost -->
       </div>
@@ -80,17 +81,21 @@
           <h3>Tip Amount</h3>
           <p>/ person</p>
         </div>
-        <div class="total-amount right-cost"><h2>$4.27</h2></div>
+        <div class="total-amount right-cost">
+          <h2 id="tip-person">$4.27</h2>
+        </div>
       </div>  
       <div class="tot-prsn">
         <div  class="left-titles">
           <h3>Total</h3>
           <p>/ person</p>
         </div>
-        <div class="total-per-peson right-cost"><h2>$32.79</h2></div>
+        <div class="total-per-peson right-cost">
+          <h2 id="total-person">$32.79</h2>
+        </div>
       </div>  
 
-      <button type="reset">RESET</button>
+      <button type="reset" id="reset">RESET</button>
     </div>
   </form>
   </div> 
@@ -111,5 +116,7 @@
   </div>  -->
 </div>
 <!-- End wrapper container -->
+
+<script src="./script.js"></script>
 </body>
 </html>

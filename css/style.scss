@@ -108,13 +108,22 @@ body {
                     background-color: $Light-grayish-cyan2 ;
                     color: $very-dark-cyan;
                     font-weight: bold;
-                   text-align: right;
+                    text-align: center;
                 }
                
                 #btn6::placeholder {
                     opacity: 1;
-                    color: $very-dark-cyan !important;
+                    color: $very-dark-cyan ;
+                    text-align: center;
                 }
+                // #btn6:focus::-webkit-input-placeholder {
+                //     color: 0 !important;
+                // }
+
+                #btn6:focus {
+                    text-align: right;
+                }
+                
                }
             }
 
@@ -206,8 +215,9 @@ body {
     .header {
         letter-spacing: .5em;
         line-height: 1.8em;
-        padding: 2.5em;
-        margin-top: 5%;
+        // padding: 2.5em;
+        margin-top: 2%;
+        margin-bottom: 5%;
     }
 
     .container-white {
