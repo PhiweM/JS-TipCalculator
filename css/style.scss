@@ -249,7 +249,7 @@ body {
 
     .container-white {
         width: 70%;
-        max-height: 65%;
+        max-height: 45%;
         position: absolute;
         left: 50%;
         top: 60%;
@@ -272,17 +272,17 @@ body {
                 height: 80%;
                 margin-right: .5em;
                 padding: .5rem;
-                padding-bottom: 1.5rem;
+                padding-bottom: .5rem;
             }
             .result {
                 width: 50%;
                 height: 90%;
                 margin-left: 1em;
                 padding: 1.5rem;
-                padding-bottom: 1.5rem;
+                padding-bottom: 2.5rem;
 
                 button {
-                    margin-top: 4.5rem;
+                    margin-top: 4.8rem;
                 }
             }
         }
