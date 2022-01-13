@@ -37,38 +37,40 @@
   
           <div class="btns buttons">
             <div class="row">
-              <input id="btn1" type="button" value="5%" name="5%">
-              <input id="btn2" type="button" value="10%" >
+              <input id="btn" type="button" value="5%" data-num="0.05">
+              <input id="btn" type="button" value="10%" data-num="0.1">
             </div>
             <div class="row">
-              <input id="btn3" type="button" value="15%">
-              <input id="btn4" type="button" value="25%">
+              <input id="btn" type="button" value="15%" data-num="0.15">
+              <input id="btn" type="button" value="25%" data-num="0.25">
             </div>
             <div class="row">
-              <input id="btn5" type="button" value="50%">
-              <input id="btn6" type="text" value="Custom" >
+              <input id="btn" type="button" value="50%" data-num="0.5">
+              <input id="btn" type="text" value="Custom" class="btn6 show-error-msg" >
             </div>
           </div>
 
           <div class="btns2 buttons">
             <div class="row">
-              <input id="btn1" type="button" value="5%" name="5%">
-              <input id="btn2" type="button" value="10%" >
-              <input id="btn3" type="button" value="15%">
+              <input id="btn" type="button" value="5%" data-num="0.05">
+              <input id="btn" type="button" value="10%" data-num="0.1">
+              <input id="btn"  type="button" value="15%" data-num="0.15" class="btn-active">
             </div>
             
             <div class="row">
-              <input id="btn4" type="button" value="25%">
-              <input id="btn5" type="button" value="50%">
-              <input id="btn6" type="text"  placeholder="Custom">
+              <input id="btn" type="button" value="25%" data-num="0.25">
+              <input id="btn" type="button" value="50%" data-num="0.5">
+              <input id="btn" class="btn6" type="text"  placeholder="Custom" class="show-error-msg">
             </div>
           </div>
-  
-          <label for="no"> Number of People</label>
-          <br>
+
+          <div class="label-wrapper">
+            <label for="no"> Number of People</label>
+            <div id="feedback"> Can't be zero</div>
+          </div>
           <i class="fa fa-user"></i>
-          <input type="text" name="no" id="no" >
-          <div id="feedback"></div>
+          <input type="text" name="no" id="input-people" >
+         
       </div>
       <!-- End of total-cost -->
       </div>
@@ -82,7 +84,7 @@
           <p>/ person</p>
         </div>
         <div class="total-amount right-cost">
-          <h2 id="tip-person">$4.27</h2>
+          <h2 id="tip-person" class="value">$0.00</h2>
         </div>
       </div>  
       <div class="tot-prsn">
@@ -91,7 +93,7 @@
           <p>/ person</p>
         </div>
         <div class="total-per-peson right-cost">
-          <h2 id="total-person">$32.79</h2>
+          <h2 id="total-person" class="value">$0.00</h2>
         </div>
       </div>  
 
