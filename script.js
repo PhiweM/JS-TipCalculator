@@ -41,8 +41,10 @@ function setBillValue() {
 
 function handleClick(event){
     tipBtns.forEach(btn => {
+        
         if(event.target.getAttribute('data-num')== btn.getAttribute('data-num')){
             tipValue = parseFloat(btn.getAttribute('data-num'));
+            // btn.classList.add('btn-active');
         }
     });
 
@@ -71,7 +73,7 @@ function setPeopleValue(){
         setTimeout(function(){
             errorMsg.classList.remove('show-error-msg');
             people.classList.remove('error-outline');
-        }, 3000);
+        }, 4000);
     }
 
     calculateTip();
@@ -97,12 +99,12 @@ function reset(){
     people.value = '1';
     setPeopleValue();
 
-    if( bill.value == '0.0' ){
-        resetBtn.classList.add('result-reset');
-        setTimeout(function(){
-            resetBtn.classList.remove('result-reset')
-        }, 3000);
-    } 
+    // if( peopleValue <= 0){
+    //     resetBtn.classList.add('result-reset');
+    //     setTimeout(function(){
+    //         resetBtn.classList.remove('result-reset');
+    //     }, 3000);
+    // } 
 }
 
 

@@ -89,31 +89,29 @@ body {
         .total-cost {
             padding: 1.7em 0;
 
-            // .btn-active {
-            //     background-color: $primary-color !important;
-            //     color: $very-dark-cyan !important;
-            // }
-
-            .btns2 {
-                display: none;
+            .btn-active {
+                background-color: $primary-color !important;
+                color: $very-dark-cyan !important;
             }
 
-            .buttons {
+            .btns {
                 margin-bottom: 25px;
-               .row {
-                   display: flex;
-                   justify-content: space-between;
-                   padding: .5em 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+                padding: .5em 0;
 
-                   input::placeholder {
-                    color: $very-dark-cyan !important;
-                    opacity: .8 !important;
+                #btn::placeholder {
+                color: $very-dark-cyan !important;
+                opacity: .8 !important;
                 }
 
-                   input {
+                   #btn {
                       cursor: pointer;
                       font-size: 24px;
-                      width: 48%;
+                      width: 46%;
                       padding: .3em;
                       background-color: $very-dark-cyan;
                       border: none;
@@ -131,7 +129,7 @@ body {
                 }
 
                 .btn6 {
-                    background-color: $Light-grayish-cyan2 ;
+                    background-color: $Light-grayish-cyan2 !important;
                     color: $very-dark-cyan;
                     font-weight: bold;
                     text-align: center;
@@ -148,7 +146,7 @@ body {
                 }
                 
                 
-               }
+               
             }
 
             i {
@@ -242,23 +240,24 @@ body {
     .header {
         letter-spacing: .5em;
         line-height: 1.8em;
-        // padding: 2.5em;
-        margin-top: 2%;
-        margin-bottom: 5%;
+        margin-top: .5rem;
     }
 
     .container-white {
-        width: 70%;
-        max-height: 45%;
+        width: 64%;
+        // max-height: 60%;
         position: absolute;
         left: 50%;
-        top: 60%;
+        top: 55%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
 
         form {
             display: flex;
-            justify-content: space-between;
+            flex-direction: row;
+            align-items: stretch !important;
+            gap: 1.5rem;
+            // justify-content: space-between;
 
             input {
                 padding: .3em;
@@ -268,16 +267,51 @@ body {
             }
 
             .left-align {
-                width: 50%;
-                height: 80%;
-                margin-right: .5em;
-                padding: .5rem;
-                padding-bottom: .5rem;
+                width: 105%;
+                height: 100% !important;
+                padding: 1rem ;
+
+                #bill,
+                #input-people {
+                    font-size: 1.9rem;
+                }
+
+                .total-cost {
+                    width: 100% !important;
+                    padding-top: 1.8rem;
+                 
+                    .btns { 
+                        // margin-bottom: 25px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between !important;
+                        flex-wrap: wrap;
+                        gap: 1rem;
+                        padding: .5em 0;
+                       
+                           #btn {
+                              cursor: pointer;
+                              font-size: 19px !important;
+                              width: 27.5% !important;
+                        }
+                       
+                    }
+        
+                    i {
+                        position: absolute;
+                        padding: 15px !important;
+                        padding-left: 10px;
+                        min-width: 40px;
+                        color: $Dark-grayish-cyan1;
+                    }
+                }
+
+
             }
             .result {
                 width: 50%;
-                height: 90%;
-                margin-left: 1em;
+                // height: 90%;
+                // margin-left: 1em;
                 padding: 1.5rem;
                 padding-bottom: 2.5rem;
 
@@ -287,43 +321,31 @@ body {
             }
         }
 
-        .total-cost {
-            padding: 1.7em 0;
-
-            .btns {
-                display: none;
-            }
-            .btns2 {
-                display: unset !important;
-                // margin-bottom: 20px;
-                .row {
-                    display: flex;
-                    justify-content: space-around;
-                    padding: .5em 0;
- 
-                    input {
-                       font-size: 19px !important;
-                       width: 30% !important;
-                       padding: .3em !important;
-                       margin-top: 2px;
-                    }
-                }
-            }
-
-            i {
-                position: absolute;
-                padding: 15px !important;
-                padding-left: 10px;
-                min-width: 40px;
-                color: $Dark-grayish-cyan1;
-            }
-        }
+        
 
         .result {
+            width: 95% !important;
+            height: 100% !important;
+            padding: 1.5rem !important;
+
+            .tip-amnt,
+            .tot-prsn {
+                margin: 0.5rem 0 2.4rem 0;
+            
             .left-titles {
                 line-height: 1rem;
-                margin-top: .7rem;
+                padding-top: 1.2rem;
             }
+            .right-cost {
+                font-size: 27px !important;
+            }
+
+            h3 {
+                font-size: 1.2rem !important;
+            }
+
+            }
+
         }
     }
  }
