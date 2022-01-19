@@ -6,6 +6,9 @@ const errorMsg = document.getElementById('feedback');
 const results = document.querySelectorAll('.value');
 const resetBtn = document.getElementById('reset');
 
+let billValue = 0.0;//default total bill for all
+let tipValue = 0;//default value 
+let peopleValue = 1;
 
 bill.addEventListener('input', setBillValue);
 
@@ -17,9 +20,7 @@ tipCustom .addEventListener('input', setTipCustomValue);
 people.addEventListener('input', setPeopleValue);
 resetBtn.addEventListener('click', reset);
 
-let billValue = 0.0;//default total bill for all
-let tipValue = 0;//default value -> 15% button is active
-let peopleValue = 1;
+
 
 // function validateFloat(s){
 //     var rgx = /^[0-9]*\.?[0-9]*$/;
@@ -89,7 +90,7 @@ function calculateTip(){
     }
 }
 
-
+//reset input fields and results display to 0
 function reset(){
     bill.value = '0.0';
     setBillValue();    
