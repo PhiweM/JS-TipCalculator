@@ -30,9 +30,9 @@ The app calculates the tip amount per person and the total bill due for every pe
 
 ### Links
 
-- Solution URL: [hhttps://www.frontendmentor.io/solutions/tip-calculator-in-html-css-javascript-and-sass-kfMiZALHa](hhttps://www.frontendmentor.io/solutions/tip-calculator-in-html-css-javascript-and-sass-kfMiZALHa)
+- Solution URL: [https://www.frontendmentor.io/solutions/tip-calculator-in-html-css-javascript-and-sass-kfMiZALHa](hhttps://www.frontendmentor.io/solutions/tip-calculator-in-html-css-javascript-and-sass-kfMiZALHa)
 
-- Live Site URL: [hhttps://fem-tip-calculator-phiwe.netlify.app/](hhttps://fem-tip-calculator-phiwe.netlify.app/)
+- Live Site URL: [https://fem-tip-calculator-phiwe.netlify.app/](hhttps://fem-tip-calculator-phiwe.netlify.app/)
 
 ## My process
 
